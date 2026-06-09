@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panda Dream · Mobile Game &amp; App Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <!-- Ambient aurora background -->
+  <div class="aurora">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+  <div class="grain"></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">🐼</span>
+      <span class="logo-text">Panda Dream</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#business">Business</a>
+      <a href="#products">Products</a>
+      <a href="#values">Values</a>
+    </nav>
+    <a class="btn btn-primary" href="#contact">Get in touch</a>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <span class="pill"><span class="ping"></span> New studio · Launching globally in 2026</span>
+        <h1>We build <span class="grad">dreams</span> that fit in your pocket</h1>
+        <p class="lead" id="heroLead">—</p>
+        <div class="platform-badges">
+          <span class="pbadge"> iOS</span>
+          <span class="pbadge">▶ Android</span>
+          <span class="pdivider"></span>
+          <span class="mbadge">IAA</span>
+          <span class="mbadge">IAP</span>
+          <span class="mbadge">Hybrid</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary lg" href="#products">Explore our games <span class="arrow">→</span></a>
+          <a class="btn btn-ghost lg" href="#about">About the studio</a>
+        </div>
+        <div class="hero-meta" id="heroMeta"></div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="glow-ring"></div>
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-head"><b>Top Charts</b><i>This week</i></div>
+            <div class="ps-row"><span class="ps-ico">🐼</span><div class="ps-info"><b>Panda Run 3D</b><i>Hyper-casual · 4.7★</i></div><span class="ps-rank">#1</span></div>
+            <div class="ps-row"><span class="ps-ico">🧩</span><div class="ps-info"><b>Dream Merge</b><i>Puzzle · 4.6★</i></div><span class="ps-rank">#3</span></div>
+            <div class="ps-row"><span class="ps-ico">🎋</span><div class="ps-info"><b>Sky Bamboo</b><i>Casual · 4.4★</i></div><span class="ps-rank">#7</span></div>
+            <div class="ps-bar"><span style="width:82%"></span></div>
+            <div class="ps-bar"><span style="width:61%"></span></div>
+            <div class="ps-bar"><span style="width:94%"></span></div>
+          </div>
+        </div>
+        <div class="float-card fc-1">📈 138% ROAS</div>
+        <div class="float-card fc-2">🌍 150+ countries</div>
+        <div class="float-card fc-3">⭐ 4.6 avg rating</div>
+      </div>
+    </section>
+
+    <!-- Stats band -->
+    <section class="stats reveal" id="stats"></section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="eyebrow">About Panda Dream</span>
+        <h2>A small studio with global ambition</h2>
+      </div>
+      <p class="about-text reveal" id="aboutText">—</p>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>From idea to millions of downloads</h2>
+      </div>
+      <div class="grid-cards" id="serviceGrid"></div>
+    </section>
+
+    <!-- Business models -->
+    <section class="section" id="business">
+      <div class="section-head reveal">
+        <span class="eyebrow">Business models</span>
+        <h2>How we turn apps into revenue</h2>
+      </div>
+      <div class="grid-biz" id="bizGrid"></div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+      <div class="section-head reveal">
+        <span class="eyebrow">Featured products</span>
+        <h2>Games players love</h2>
+      </div>
+      <div class="grid-products" id="productGrid"></div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" id="values">
+      <div class="section-head reveal">
+        <span class="eyebrow">Core values</span>
+        <h2>How we work</h2>
+      </div>
+      <div class="grid-values" id="valueGrid"></div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="cta reveal" id="contact">
+      <div class="cta-inner">
+        <h2>Let's build something great together</h2>
+        <p>Partnerships, investment, or just to say hello — we'd love to hear from you.</p>
+        <a class="btn btn-primary lg" id="ctaMail" href="#">✉ Email us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="f-brand"><span class="logo-mark sm">🐼</span> Panda Dream Studio</div>
+    <div class="f-info" id="footInfo"></div>
+    <div class="f-copy">© 2026 Panda Dream. All rights reserved.</div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
