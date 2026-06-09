@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "public")));
 const company = {
   name: "Panda Dream",
   tagline: "iOS & Android app studio",
-  intro: "We build native iOS and Android apps and games — designed to scale globally and monetized through IAA, IAP and hybrid models that reach millions of users every month.",
+  intro: "We build native iOS and Android apps — designed to scale globally and monetized through IAA, IAP and hybrid models, reaching millions of users every month.",
   founded: 2026,
   hq: "Hanoi, Vietnam",
   email: "phinguyendinh120@gmail.com",
@@ -26,17 +26,17 @@ const company = {
   ],
 
   services: [
-    { icon: "🎮", title: "Game Development", desc: "Hyper-casual & casual games for iOS and Android, tuned for a global audience." },
-    { icon: "📱", title: "Utility Apps", desc: "Lightweight tools and entertainment apps with smooth, friendly experiences." },
+    { icon: "📲", title: "App Development", desc: "Native iOS and Android apps, engineered to scale to a global audience." },
+    { icon: "🧰", title: "Utility & Productivity", desc: "Lightweight tools that solve real problems with smooth, friendly UX." },
     { icon: "📈", title: "User Acquisition", desc: "Data-driven advertising and growth campaigns that scale profitably." },
-    { icon: "🎨", title: "UX / UI Design", desc: "Minimal, beautiful interfaces with the player experience at the center." }
+    { icon: "🎨", title: "UX / UI Design", desc: "Minimal, beautiful interfaces with the user experience at the center." }
   ],
 
   products: [
-    { icon: "🐼", name: "Panda Run 3D", category: "Hyper-casual", rating: 4.7, desc: "An addictive endless runner." },
-    { icon: "🧩", name: "Dream Merge",  category: "Puzzle",       rating: 4.6, desc: "A relaxing merge & match game." },
-    { icon: "🎋", name: "Sky Bamboo",   category: "Casual",       rating: 4.4, desc: "A gentle adventure in the clouds." },
-    { icon: "🍳", name: "Panda Chef",   category: "Simulation",   rating: 4.5, desc: "A playful cooking simulation." }
+    { icon: "📄", name: "Panda Scan",  category: "Productivity",  rating: 4.7, desc: "Fast document scanner & PDF tools." },
+    { icon: "📝", name: "Dream Notes", category: "Productivity",  rating: 4.6, desc: "Notes, tasks and reminders in one." },
+    { icon: "🌤️", name: "Sky Weather", category: "Utilities",     rating: 4.4, desc: "Clean, accurate daily forecasts." },
+    { icon: "✨", name: "Photo Panda", category: "Photo & Video", rating: 4.5, desc: "One-tap photo editing & filters." }
   ],
 
   // Monetization / business models

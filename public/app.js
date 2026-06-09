@@ -28,7 +28,7 @@ async function load(){
 
   // About
   document.getElementById("aboutText").textContent =
-    `Founded in ${c.founded} in ${c.hq}, ${c.name} is a ${c.tagline.toLowerCase()}. ${c.intro}`;
+    `Founded in ${c.founded} in ${c.hq}, ${c.name} is an ${c.tagline}. ${c.intro}`;
 
   // Services
   document.getElementById("serviceGrid").innerHTML = c.services.map(s=>

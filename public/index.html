@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panda Dream · Mobile Game &amp; App Studio</title>
+  <title>Panda Dream · iOS &amp; Android App Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23ff7a59'/%3E%3Cg fill='%231b0f06'%3E%3Cellipse cx='16' cy='27' rx='6' ry='8'/%3E%3Cellipse cx='27' cy='18.5' rx='6.5' ry='9'/%3E%3Cellipse cx='40' cy='18.5' rx='6.5' ry='9'/%3E%3Cellipse cx='51' cy='27' rx='6' ry='8'/%3E%3Cpath d='M33.5 31c-10 0-17 7-17 15 0 6.6 5.6 10 12 10 3 0 4-1.2 5.5-1.2s2.5 1.2 5.5 1.2c6.4 0 12-3.4 12-10 0-8-7-15-18-15z'/%3E%3C/g%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -22,7 +23,15 @@
   <!-- Nav -->
   <header class="nav">
     <a class="logo" href="#top">
-      <span class="logo-mark">🐼</span>
+      <span class="logo-mark">
+        <svg class="paw" viewBox="0 0 64 64" aria-hidden="true">
+          <ellipse cx="16" cy="27" rx="6" ry="8"/>
+          <ellipse cx="27" cy="18.5" rx="6.5" ry="9"/>
+          <ellipse cx="40" cy="18.5" rx="6.5" ry="9"/>
+          <ellipse cx="51" cy="27" rx="6" ry="8"/>
+          <path d="M33.5 31c-10 0-17 7-17 15 0 6.6 5.6 10 12 10 3 0 4-1.2 5.5-1.2s2.5 1.2 5.5 1.2c6.4 0 12-3.4 12-10 0-8-7-15-18-15z"/>
+        </svg>
+      </span>
       <span class="logo-text">Panda Dream</span>
     </a>
     <nav class="nav-links">
@@ -43,15 +52,17 @@
         <h1>We build <span class="grad">dreams</span> that fit in your pocket</h1>
         <p class="lead" id="heroLead">—</p>
         <div class="platform-badges">
-          <span class="pbadge"> iOS</span>
-          <span class="pbadge">▶ Android</span>
-          <span class="pdivider"></span>
+          <span class="pb-label">Built for</span>
+          <span class="pbadge">iOS</span>
+          <span class="pbadge">Android</span>
+          <span class="pb-sep"></span>
+          <span class="pb-label">Monetization</span>
           <span class="mbadge">IAA</span>
           <span class="mbadge">IAP</span>
           <span class="mbadge">Hybrid</span>
         </div>
         <div class="hero-cta">
-          <a class="btn btn-primary lg" href="#products">Explore our games <span class="arrow">→</span></a>
+          <a class="btn btn-primary lg" href="#products">Explore our apps <span class="arrow">→</span></a>
           <a class="btn btn-ghost lg" href="#about">About the studio</a>
         </div>
         <div class="hero-meta" id="heroMeta"></div>
@@ -62,10 +73,10 @@
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="ps-head"><b>Top Charts</b><i>This week</i></div>
-            <div class="ps-row"><span class="ps-ico">🐼</span><div class="ps-info"><b>Panda Run 3D</b><i>Hyper-casual · 4.7★</i></div><span class="ps-rank">#1</span></div>
-            <div class="ps-row"><span class="ps-ico">🧩</span><div class="ps-info"><b>Dream Merge</b><i>Puzzle · 4.6★</i></div><span class="ps-rank">#3</span></div>
-            <div class="ps-row"><span class="ps-ico">🎋</span><div class="ps-info"><b>Sky Bamboo</b><i>Casual · 4.4★</i></div><span class="ps-rank">#7</span></div>
+            <div class="ps-head"><b>Top Apps</b><i>This week</i></div>
+            <div class="ps-row"><span class="ps-ico">📄</span><div class="ps-info"><b>Panda Scan</b><i>Productivity · 4.7★</i></div><span class="ps-rank">#1</span></div>
+            <div class="ps-row"><span class="ps-ico">📝</span><div class="ps-info"><b>Dream Notes</b><i>Productivity · 4.6★</i></div><span class="ps-rank">#3</span></div>
+            <div class="ps-row"><span class="ps-ico">🌤️</span><div class="ps-info"><b>Sky Weather</b><i>Utilities · 4.4★</i></div><span class="ps-rank">#7</span></div>
             <div class="ps-bar"><span style="width:82%"></span></div>
             <div class="ps-bar"><span style="width:61%"></span></div>
             <div class="ps-bar"><span style="width:94%"></span></div>
@@ -111,7 +122,7 @@
     <section class="section" id="products">
       <div class="section-head reveal">
         <span class="eyebrow">Featured products</span>
-        <h2>Games players love</h2>
+        <h2>Apps people love</h2>
       </div>
       <div class="grid-products" id="productGrid"></div>
     </section>
@@ -136,7 +147,17 @@
   </main>
 
   <footer class="footer">
-    <div class="f-brand"><span class="logo-mark sm">🐼</span> Panda Dream Studio</div>
+    <div class="f-brand">
+      <span class="logo-mark sm">
+        <svg class="paw" viewBox="0 0 64 64" aria-hidden="true">
+          <ellipse cx="16" cy="27" rx="6" ry="8"/>
+          <ellipse cx="27" cy="18.5" rx="6.5" ry="9"/>
+          <ellipse cx="40" cy="18.5" rx="6.5" ry="9"/>
+          <ellipse cx="51" cy="27" rx="6" ry="8"/>
+          <path d="M33.5 31c-10 0-17 7-17 15 0 6.6 5.6 10 12 10 3 0 4-1.2 5.5-1.2s2.5 1.2 5.5 1.2c6.4 0 12-3.4 12-10 0-8-7-15-18-15z"/>
+        </svg>
+      </span> Panda Dream Studio
+    </div>
     <div class="f-info" id="footInfo"></div>
     <div class="f-copy">© 2026 Panda Dream. All rights reserved.</div>
   </footer>
